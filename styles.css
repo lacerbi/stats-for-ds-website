@@ -1,0 +1,90 @@
+/* Custom styles for Statistics for Data Science lecture notes */
+
+/* KaTeX math styling - ensure proper colors */
+.katex,
+.katex-display,
+.katex .mord,
+.katex .minner,
+.katex .mrel,
+.katex .mop,
+.katex .mpunct,
+.katex .mbin,
+.katex-error {
+  color: inherit !important;
+}
+
+/* Override KaTeX error styling */
+.katex-error {
+  color: inherit !important;
+  background: none !important;
+}
+
+
+/* Better spacing for mathematical content */
+.math.display {
+  margin: 1.5em 0;
+}
+
+/* Callout boxes styling */
+.callout {
+  margin: 1.5em 0;
+}
+
+/* Code blocks */
+pre.sourceCode {
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+/* Inline code */
+code:not(pre code) {
+  padding: 0.125em 0.25em;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+/* Panel tabs */
+.panel-tabset {
+  margin: 1.5em 0;
+}
+
+/* Better spacing for details/summary (solutions) */
+details {
+  margin: 1em 0;
+  padding: 0.5em;
+  border-radius: 0.25rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Figure captions */
+.figure-caption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/* Theorem environments */
+.theorem, .lemma, .definition, .example {
+  margin: 1.5em 0;
+  padding: 1em;
+  border-left: 3px solid;
+}
+
+.theorem::before {
+  content: "Theorem. ";
+  font-weight: bold;
+}
+
+.definition::before {
+  content: "Definition. ";
+  font-weight: bold;
+}
+
+.example::before {
+  content: "Example. ";
+  font-weight: bold;
+}
